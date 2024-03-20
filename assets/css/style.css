@@ -1,0 +1,90 @@
+*{
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+  
+}
+
+@keyframes piscaPisca {
+    0%{color:black}
+    5%{color:black}
+    10%{color:blue}
+    15%{color:blue}
+    20%{color:black}
+    25%{color:black}
+    30%{color:blue}
+    35%{color:blue}
+    40%{color:black}
+    45%{color:black}
+    50%{color:blue}
+    55%{color:blue}
+    60%{color:black}
+    65%{color:black}
+    70%{color:blue}
+    75%{color:blue}
+    80%{color:black}
+    85%{color:black}
+    90%{color:blue}
+    95%{color:blue}
+    100%{color:black}
+}
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 3rem;
+}
+.menu .list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    
+    max-width: 20rem;
+    border-radius: 3rem; 
+    border-style:outset;
+    border-color: darkblue;
+    background: rgba(248, 243, 243, 0.4); 
+} 
+.menu .list .topic{
+    margin: .5rem;
+    align-self: center;
+    display: grid;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    font-size: large;
+}
+.menu .list .subtitle{
+    font-size: x-large;
+    font-weight: 600;
+    animation: piscaPisca 5.0s infinite;
+}
+.menu .list img{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 7rem;
+    border-radius: 10rem;
+
+}
+
+.menu .list .topic::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: darkblue;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+
+}
+.menu .list .topic:hover::after{
+    width: 100%;
+    cursor:pointer;
+    
+}
+
