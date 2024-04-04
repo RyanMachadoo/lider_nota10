@@ -1,0 +1,15 @@
+.popup{
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: rgba(248, 243, 243, 0.4);
+    font-size: 50;
+}
+
+dialog{
+    border: none;
+    border-radius: 2rem;
+}
+dialog::backdrop{
+    background-color: rgba(248, 243, 243, 0.4);
+}
